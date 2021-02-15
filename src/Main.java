@@ -12,13 +12,5 @@ public class Main {
         // 「Hello World.」に対して、全体の飾り枠を付けたもの
         Display b3 = new FullBorder(b2);
         b3.show();
-
-        // 「Hello World.」に対して、何重にも飾り枠を付けたもの
-        Display b4 =
-                new FullBorder(
-                    new SideBorder(
-                        new FullBorder(
-                            new StringDisplay("Hello japan")), '*'));
-        b4.show();
     }
 }
